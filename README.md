@@ -9,7 +9,7 @@
 
 ## Data
 
-* Data consists of two parts:
+Data consists of two parts:
    1. Dependent variables:
       a. prices for last 30 days including max, min, average, open, and close
     b. prices for last day including max, min, average, open, and close for each hour
