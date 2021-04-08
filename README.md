@@ -13,11 +13,11 @@
 
 1. Dependent variables:
 
-    1. prices for last 30 days including max, min, average, open, and close
-    2. prices for last day including max, min, average, open, and close for each hour
+    * prices for last 30 days including max, min, average, open, and close (shape: (30,5))
+    * prices for last day including max, min, average, open, and close for each hour(shape: (24,5))
 
 2. Independent variables
   
-      1. 7-day profit
-      2. 7-day profit classified
+    * 7-day profit
+    * 7-day profit classified
 
