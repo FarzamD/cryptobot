@@ -1,6 +1,7 @@
 import numpy as np
 import requests
 import pandas as pd
+import time
 def getCryptoNames(price,marketCap):
     s=requests.Session()
     url='https://api.coinmarketcap.com/data-api/v3/cryptocurrency/listing?start=1&limit=250&sortBy=market_cap&sortType=desc&convert=USD,btc,eth&cryptoType=all&tagType=all&aux=ath,atl,high24h,low24h,num_market_pairs,cmc_rank,date_added,tags,platform,max_supply,circulating_supply,total_supply,volume_7d,volume_30d'
@@ -31,8 +32,9 @@ def stockiator(json,day=False):
     return res
 
 def getCryptoData(crypto_Names):
-    endt="1617327100"
+    endt=int(time.time()/100)*100
     day=89600
+    endt=str(endt-day*7)
     month=2593100
     monthx3=7779300
     startt3m= str(int(endt)-monthx3)
