@@ -13,8 +13,8 @@
 
 1. Dependent variables:
 
-    * prices for last 30 days including max, min, average, open, and close (shape: (30,5))
-    * prices for last day including max, min, average, open, and close for each hour(shape: (24,5))
+    * prices for last 30 days including max, min, average, open, and close (shape: (days,5) where 33>days>28 depending on the month and hour )
+    * prices for last day including max, min, average, open, and close for each hour(shape: (hours,5) where 26>hours>23 depending on the minute)
 
 2. Independent variables
   
