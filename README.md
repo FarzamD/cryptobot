@@ -21,3 +21,8 @@
     * 7-day profit
     * 7-day profit classified
 
+## Models
+
+* Eeach model folder represents a different type of model with distinctively different structure
+
+* Each model is trained to find the optimized parameters
