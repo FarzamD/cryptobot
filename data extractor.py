@@ -55,7 +55,7 @@ def getCryptoData(crypto_Names):
             tmp['30d']=stockiator(a)
             res[tmp['name']]=tmp
         except:
-            print(coin['name']+'   fucked up')
+            print(coin['name']+'   failed to load #$%$@#T%')
     for coin in crypto_Names:
         try:
             s=requests.Session()
@@ -69,7 +69,7 @@ def getCryptoData(crypto_Names):
             a=g.json()['data']
             res[coin['name']]['24h']=stockiator(a, True)
         except:
-            print(coin['name']+'   fucked up')
+            print(coin['name']+'   failed to load #$%$@#T%')
     return res
 
 cryptos=getCryptoNames((1e-6,0.05),[int(1e6),int(1e9)])
