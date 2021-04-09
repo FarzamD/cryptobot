@@ -1,6 +1,7 @@
+import pandas as pd
 import numpy as np
 import requests
-import pandas as pd
+import pickle
 import time
 def getCryptoNames(price,marketCap):
     s=requests.Session()
@@ -89,3 +90,10 @@ ds=pd.DataFrame(ds)
 '''
 ds= dataset_formatter(d)
 ds=pd.DataFrame(ds)
+with open('d.pickle','wb') as f:
+    pickle.dump(d, f)
+with open('ds.pickle','wb') as f:
+    pickle.dump(ds, f)
+with open('cryptos.pickle','wb') as f:
+    pickle.dump(cryptos, f)
+
